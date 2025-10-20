@@ -118,11 +118,12 @@ body {
 
 /* Img */
 .carousel-item img {
-    filter: brightness(70%);
-    height: 800px;
-    object-fit: cover;
-
+  filter: brightness(70%);
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
 }
+
 
 .carousel-indicators {
   bottom: 20px;
