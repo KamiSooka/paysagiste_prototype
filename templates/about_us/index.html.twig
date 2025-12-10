@@ -1,20 +1,74 @@
 {% extends 'base.html.twig' %}
-
-{% block title %}Hello AboutUsController!{% endblock %}
+{% block title %}À propos de Pouce Vert{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <h1>🌿 Pouce Vert</h1>
+    <p>Créateurs d’espaces paysagers modernes et durables.</p>
+    <a href="#mission" class="btn-primary">Notre vision</a>
+  </div>
+</section>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<section id="mission" class="mission reveal">
+  <h2>Notre mission</h2>
+  <div class="mission-cards">
+    <div class="card">
+      <div class="icon">🌱</div>
+      <h3>Durabilité</h3>
+      <p>Matériaux pérennes et végétaux adaptés.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🎨</div>
+      <h3>Esthétique</h3>
+      <p>Des espaces harmonieux et inspirants.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🤝</div>
+      <h3>Respect</h3>
+      <p>Écoute et accompagnement sur mesure.</p>
+    </div>
+  </div>
+</section>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>/Applications/XAMPP/xamppfiles/htdocs/Projet_Prototypes/paysagiste_prototype/src/Controller/AboutUsController.php</code></li>
-        <li>Your template at <code>/Applications/XAMPP/xamppfiles/htdocs/Projet_Prototypes/paysagiste_prototype/templates/about_us/index.html.twig</code></li>
-    </ul>
-</div>
+<section class="values reveal">
+  <h2>Nos valeurs en images</h2>
+  <div class="values-grid">
+    <div class="value-item">
+      <img src="/images/img_paysagiste_durabilite.jpg" alt="Durabilité">
+      <div class="overlay"><h3>Durabilité</h3></div>
+    </div>
+    <div class="value-item">
+      <img src="/images/img_paysagiste_esthetique.jpg" alt="Esthétique">
+      <div class="overlay"><h3>Esthétique</h3></div>
+    </div>
+    <div class="value-item">
+      <img src="/images/img_paysagiste_respect.jpg" alt="Respect">
+      <div class="overlay"><h3>Respect</h3></div>
+    </div>
+  </div>
+</section>
+
+<section class="timeline reveal">
+  <h2>Notre histoire</h2>
+  <div class="timeline-line">
+    <div class="step"><span>2018</span><p>Premiers chantiers</p></div>
+    <div class="step"><span>2020</span><p>Structuration</p></div>
+    <div class="step"><span>2023</span><p>Projets immersifs</p></div>
+    <div class="step"><span>Aujourd’hui</span><p>Accompagnement sur mesure</p></div>
+  </div>
+</section>
+
+<section class="stats reveal">
+  <div class="stat"><span data-target="120">0</span><p>Projets réalisés</p></div>
+  <div class="stat"><span data-target="35">0</span><p>Espèces privilégiées</p></div>
+  <div class="stat"><span data-target="15">0</span><p>Fournisseurs durables</p></div>
+</section>
+
+<section class="cta reveal">
+  <h2>Envie de transformer votre espace ?</h2>
+  <p>Contactez-nous pour donner vie à vos projets paysagers.</p>
+  <a href="{{ path('app_contact') }}" class="btn-primary">Nous contacter</a>
+</section>
 {% endblock %}
