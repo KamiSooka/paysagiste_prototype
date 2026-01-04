@@ -1,20 +1,107 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ServicesController!{% endblock %}
+{% block title %}Hello ServicesController!
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+	<section class="service">
+		<div class="service-bg"></div>
+		<div class="service-content">
+			<h1>🌿 Services</h1>
+			<p>Créateurs d’espaces paysagers modernes et durables.</p>
+			<a href="#service" class="btn-primary">Nos Services</a>
+		</div>
+	</section>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+	<section id="service" class="services">
+		<h2>Nos services</h2>
+		<p class="subtitle">Une approche moderne, durable et sur‑mesure</p>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>/Applications/XAMPP/xamppfiles/htdocs/Projet_Prototypes/paysagiste_prototype/src/Controller/ServicesController.php</code></li>
-        <li>Your template at <code>/Applications/XAMPP/xamppfiles/htdocs/Projet_Prototypes/paysagiste_prototype/templates/services/index.html.twig</code></li>
-    </ul>
-</div>
+		<div class="tiles">
+			<div class="tile">
+				<div class="tile-icon">🌱</div>
+				<h3>Création de jardins</h3>
+				<p>Conception sur mesure, harmonie des formes et choix végétal adapté.</p>
+			</div>
+
+			<div class="tile">
+				<div class="tile-icon">✂️</div>
+				<h3>Entretien & taille</h3>
+				<p>Taille douce, entretien saisonnier et suivi professionnel.</p>
+			</div>
+
+			<div class="tile">
+				<div class="tile-icon">💧</div>
+				<h3>Arrosage automatique</h3>
+				<p>Installation économe, intelligente et adaptée à votre jardin.</p>
+			</div>
+
+			<div class="tile">
+				<div class="tile-icon">🌼</div>
+				<h3>Plantation & renouvellement</h3>
+				<p>Massifs fleuris, arbustes, vivaces et conseils personnalisés.</p>
+			</div>
+
+			<div class="tile">
+				<div class="tile-icon">🧹</div>
+				<h3>Remise en état</h3>
+				<p>Nettoyage complet, débroussaillage et rénovation de jardins.</p>
+			</div>
+
+			<div class="tile">
+				<div class="tile-icon">🤝</div>
+				<h3>Conseil & accompagnement</h3>
+				<p>Diagnostic, recommandations et suivi sur mesure.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="testimonials">
+		<div class="testimonials-left">
+
+			<h2>Ils nous font confiance</h2>
+
+			<div class="carousel">
+
+				<div class="testimonial active">
+					<div class="client">
+						<img src="/images/img_client1.jpg" alt="Client">
+					</div>
+					<div class="stars">★★★★★</div>
+					<p>“Un travail impeccable, un jardin transformé avec goût et professionnalisme.”</p>
+					<h4>— Marie, Lille</h4>
+				</div>
+
+				<div class="testimonial">
+					<div class="client">
+						<img src="/images/img_client2.jpg" alt="Client">
+					</div>
+					<div class="stars">★★★★★</div>
+					<p>“Très à l’écoute, force de proposition, et un résultat magnifique.”</p>
+					<h4>— Julien, Lambersart</h4>
+				</div>
+
+				<div class="testimonial">
+					<div class="client">
+						<img src="/images/img_client3.jpg" alt="Client">
+					</div>
+					<div class="stars">★★★★★</div>
+					<p>“Ponctuel, sérieux, et un vrai sens du détail. Je recommande à 100%.”</p>
+					<h4>— Sophie, Marcq-en-Barœul</h4>
+				</div>
+
+			</div>
+
+			<div class="carousel-controls">
+				<button id="prev">←</button>
+				<button id="next">→</button>
+			</div>
+
+		</div>
+
+		<div class="testimonials-right">
+			<img src="/images/img_galets.jpg" alt="Jardin paysagiste">
+		</div>
+	</section>
+
 {% endblock %}

@@ -1,6 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => {
-  // --- Reveal on scroll ---
-  const revealEls = document.querySelectorAll('.reveal, .mission .card, .value-item, .timeline .step, .stat, .cta');
+// --- Reveal on scroll ---
+const revealEls = document.querySelectorAll('.reveal, .mission .card, .value-item, .timeline .step, .stat, .cta');
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
@@ -46,4 +45,3 @@ document.addEventListener('DOMContentLoaded', () => {
       heroBg.style.transform = `translateY(${offset}px)`;
     });
   }
-});
